@@ -35,7 +35,7 @@ description: "思考无法克服恐惧，但行动可以。"
     {% endif %}
     {% if paginator.next_page %}
     <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl + '/web' | replace: '//', '/' }}">以前的帖子 &rarr;</a>
     </li>
     {% endif %}
 </ul>
